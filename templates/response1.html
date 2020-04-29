@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>HTML Form Response</title>
+</head>
+
+<body>
+    <h1>Latest COVID-19 Figures for {{country}}</h1>
+    
+    {% if country|length != 0 %}
+        <img src= {{flag}} width=500/>
+        <li>Total Cases: {{c_tot_cases}}</li>
+        <li>Total Deaths: {{c_deaths}}</li>
+        <li>Deaths Today: {{c_today_deaths}}</li>
+        <li>Total Recoveries: {{c_recovered}}</li>
+        <li>Active Cases: {{c_active_cases}}</li>
+        <li>Total Tests Administered: {{tests}}</li>
+        <li>Cases per One Million: {{cpm}}</li>
+        <li>Deaths per One Million: {{dpm}}</li>
+        <li>Tests per One Million: {{tpm}}</li>
+    {% endif %}
+        
+
+</body>
+</html>

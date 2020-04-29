@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Figures</title>
+
+<body>
+    <h1>Latest COVID-19 figures as of {{date}}</h1>
+    <img 
+        src="https://images.newscientist.com/wp-content/uploads/2020/02/11165812/c0481846-wuhan_novel_coronavirus_illustration-spl.jpg"
+        width=500/>
+
+    <form action="/handle_form" method="POST">
+        <p>Please only make one entry at a time:</p>
+        <p>
+            Enter the name of a country or 
+            ISO2/ISO3 code for up to date COVID-19 figures:
+            <input name="country" type="text"/> <br/><br/>
+        </p>
+
+        <p>
+            Data from <a href="https://github.com/NovelCOVID/API">NovelCOVID API</a>
+        </p>
+        <input type="submit" value="Submit Form"/>
+    </form>
+</body>
+</html>
